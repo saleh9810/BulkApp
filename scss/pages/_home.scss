@@ -1,0 +1,373 @@
+.unique__section {
+  &__box {
+    justify-content: center;
+  
+    &__card {
+      width: 22%;
+      margin: 0 1rem;
+      padding: 1.6rem 1.4rem;
+      padding-bottom: 3rem;
+      @include respond(tab-land) {
+        width: 35%;
+    }
+  
+      img {
+        margin: 1rem 0rem;
+      }
+  
+      h4 {
+        margin: 1rem 0rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+    }
+  }
+ 
+}
+
+
+
+.believe__section {
+  background-color: $color-third;
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+  &__img {
+    width: 60%;
+    @include respond(tab-land) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+  }
+
+  &__content {
+    width: 40%;
+    @include respond(tab-land) {
+      width: 100%;
+  }
+
+    a {
+      @include btn(none, 0.9rem, 2.4rem)
+    }
+  }
+}
+
+.total__section {
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    width: 50%;
+    @include respond(tab-land) {
+      width: 100%;
+      text-align: center;
+  }
+  }
+
+  &__content {
+    width: 50%;
+    padding: 0 5rem;
+    @include respond(tab-land) {
+      width: 100%;
+      padding: 0 0rem;
+      margin-top: 2rem;
+
+  }
+
+    a {
+      @include btn(none,0.9rem, 2.4rem)
+    }
+  }
+}
+
+.video__section {
+
+video {
+    width: 100%;
+}
+  position: relative;
+  
+
+  figure {
+    @include absCenter;
+    z-index: 100;
+  }
+}
+
+.pricing__section {
+  background-color: $color-third;
+
+  &__table {
+    justify-content: space-around;
+    align-items: center;
+
+    &__item {
+      @extend %pirceCard;
+      @include respond(tab-land) {
+        width: 60%;
+    }
+
+      &__header {
+        padding: 3rem;
+        justify-content: space-between;
+          .Standard {
+          padding-right: 3rem;
+
+          h4 {
+            letter-spacing: 1px;
+            font-weight: 600;
+
+          }
+        }
+        .price h2 {
+          font-size: 2.1rem;
+        }
+      
+    }
+
+    hr {
+      display: block;
+       height: 1px;
+      border: 0;
+       border-top: 1px solid rgb(235, 234, 234);
+    }
+
+    &__list {
+      li {
+        padding-bottom: 0.6rem;
+      }
+
+      li:last-child {
+        padding-bottom: 0rem;
+        width: 50%;
+        margin: 0 auto;
+        @include btn(#dddddd, 0.8rem, 1rem);
+        background-color: #f9f9ff;
+        border-radius: 5px;
+
+        a {
+          color: black;
+        }
+        
+      }
+    
+    }
+
+    }
+
+  }
+  
+  }
+
+ 
+
+
+
+.screenshots__section {
+
+
+  &__content {
+    justify-content: space-around;
+
+    @include respond(tab-land) {
+        img {
+          width: 22rem;
+          margin-bottom: 2rem;
+        }
+  }
+  }
+}
+
+.testimonials__section {
+  background-color: $color-third;
+
+  &__content {
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+
+    
+      &__box {
+        justify-content: center;
+        background-color: #fff;
+        margin: 0 1rem;
+        padding: 1.5rem;
+        border-radius: 10px;
+        @include respond(tab-land) {
+          margin-bottom: 2rem;
+      }
+
+        &__img {
+          width: 20%;
+        }
+
+        &__data {
+          width: 60%;
+        }
+      }
+     
+    }
+  }
+
+}
+
+
+.download__section {
+
+  background: linear-gradient(to right, $color-secondary, $color-primary);
+  color: #fff;
+
+  &__header {
+    h2, p {
+      color: #fff;
+    }
+  
+    p {
+      width: 65%;
+      margin: 0 auto;
+    }
+  }
+
+  &__content {
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      margin: 0 0.5rem;
+      align-items: center;
+      @include btn(#fff, 0.8rem, 1.8rem);
+      border-radius: 5px;
+
+      &__icon {
+        font-size: 2.2rem;
+        margin-right: 1rem;
+      }
+
+      &__data {
+        h3 {
+            font-size: 1.4rem;
+        }
+      }
+    }
+  } 
+}
+
+.news__section {
+  &__content {
+    justify-content: center;
+    &__item {
+      width: 30%;
+      background-color: $color-third;
+      margin: 0 1rem;
+      padding: 3rem 2rem;
+
+      &__date {
+        @include btn(rgb(175, 175, 175), 0.2rem, 0.5rem);
+        text-align: center;
+        width: 40%;
+        background-color: #fff;
+        color: rgb(146, 143, 143);
+      }
+
+      h3 {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        font-weight: 500;
+      }
+      &__icons {
+        &__icon {
+          margin-right: 0.8rem;
+          font-size: 0.8rem;
+          color: rgb(156, 154, 154);
+        }
+      }
+    }
+  }
+}
+
+
+footer {
+  background-color: #222222;
+  color: #fffff1;
+  justify-content: center;
+  align-items: center;
+   
+
+    .products{
+      width: 25%;
+      p {
+        margin-bottom:  0.8rem;
+        font-size: 0.8rem;
+      }
+      
+
+    }
+
+    .newsletter {
+        width: 52%;
+        input {
+          width: 75%;
+          height: 2.2rem;
+          border-radius: 20px;
+          border: none; 
+
+          &::placeholder {
+            padding-left: 1rem;
+          }
+
+        }
+
+     
+
+    
+        a {
+          @include btn(none, 1rem, 1rem);
+          @include linear-gradient;
+          padding: 0.7rem 1.9rem;
+          border-radius: 20px;
+          position: relative;
+          right: 5rem;
+
+        }
+    }
+
+    .instagram {
+      width: 23%;
+      &__box {
+        figure {
+          margin-top: 0.3rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    .bottom__content {
+      justify-content: space-between;
+      p {
+       
+        .heart__icon, span {
+          color: $color-primary;
+        }
+      }
+
+      &__icons {
+        &__list {
+          li {
+            margin-left: 0.5rem;
+            background-color: #111111;
+            padding: 0.4rem 0.6rem;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+   
+}

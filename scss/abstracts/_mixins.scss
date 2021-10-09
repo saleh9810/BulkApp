@@ -1,0 +1,46 @@
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@mixin boxShadow($color, $px1, $px2, $px3, $px4) {
+    
+    box-shadow: $color $px1 $px2 $px3 $px4;
+}
+
+
+@mixin btn($color, $padding1, $padding2) {
+  
+        border: 1px solid $color;
+        padding: $padding1 $padding2;
+        font-size: 0.8rem;
+        font-weight: 540;
+    
+}
+
+@mixin linear-gradient {
+    background: linear-gradient(to right, $color-secondary, $color-primary);
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 600px) { @content };    //600px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 900px) { @content };     //900px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 1200px) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 1800px) { @content };    //1800
+    }
+}
+
+
+
+

@@ -1,0 +1,4 @@
+.card {
+    background-color: #fff;
+    @include boxShadow(rgb(247, 245, 245), 10px, 10px, 10px, 10px);
+}

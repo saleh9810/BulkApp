@@ -1,0 +1,12 @@
+.btn__white {   
+    border-radius: 5px;
+    color: #000000;
+    background-color: #fff;
+}
+
+.primary__btn {
+    @include linear-gradient;
+    color: #fff;
+    border-radius: 5px;
+    @include boxShadow(rgb(209, 209, 209), 3px, 5px,5px,3px);
+}
